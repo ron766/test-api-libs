@@ -1,8 +1,8 @@
-import axios from 'axios';
+import got from 'got';
 
 export default async function handler(req, res) {
   try {
-    const data = await axios.get("https://jsonplaceholder.typicode.com/users");
+    const data = await got("https://jsonplaceholder.typicode.com/users").json();
     console.log(data);
     res.status(200).send(data);
   } catch (error) {
