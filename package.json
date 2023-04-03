@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/VMonsch/launch-api#readme",
   "dependencies": {
+    "cross-fetch": "^3.1.5",
     "node-fetch": "^1.7.3",
     "pad-center": "^1.1.4"
   }
