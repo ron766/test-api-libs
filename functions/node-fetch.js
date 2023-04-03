@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
-    const response = await fetch('https://api.github.com/users/github');
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await response.json();
 
     console.log(data);
